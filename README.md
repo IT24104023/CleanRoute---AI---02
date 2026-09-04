@@ -60,41 +60,58 @@ In accordance with Section 2.3 of the SE3090 assessment guidelines:
 
 ## 👥 Team Member Details & Meaningful Contributions
 
-Each registered member took full ownership of a feature module across both Frontend and Backend, maintaining dedicated Git branches and Pull Requests:
+In accordance with Section 1.4 of the SE3090 requirements, each registered member took full ownership of a feature module across both Frontend and Backend, maintaining dedicated Git branches and Pull Requests:
 
 ### 👤 Member 1: Mohammed Zakee (IT24104023)
-* **Role**: Schedule – Create + Read (Frontend & Backend Lead)
-* **Git Branch**: `Zakee` (PR #1 Merged into `main`)
-* **Key Contributions**:
+* **Assigned Role**: Schedule – Create + Read (Frontend & Backend Lead)
+* **Git Branch**: `Zakee` (Pull Request #1 merged into `main`)
+* **Typical Focus Area**: Functional Implementation & UI Development
+* **Frontend Contributions**:
   * Implemented `ResidentScheduleView.jsx` and `ScheduleCard.jsx` displaying last & next collection dates with Sri Lankan date formatting.
   * Built admin `ScheduleCreateForm.jsx` with input validation enforcing date sequence (`Next Date >= Last Date`).
-  * Developed backend controllers `getSchedules`, `getScheduleByArea`, and `createSchedule` in `member1_scheduleCreateRead`.
+  * Implemented `scheduleCreateValidation.js` and `scheduleAreaFilter.js`.
+* **Backend Contributions**:
+  * Developed backend controllers `getSchedules`, `getScheduleByArea`, and `createSchedule` in `backend/src/modules/member1_scheduleCreateRead/`.
+  * Defined routes in `scheduleCreateRead.routes.js`.
 
-### 👤 Member 2: Chemini (Member 2)
-* **Role**: Schedule – Update + Delete
-* **Git Branch**: `Chemini` (PR #4 Merged into `main`)
-* **Key Contributions**:
+### 👤 Member 2: Chemini (IT24104054)
+* **Assigned Role**: Schedule – Update + Delete
+* **Git Branch**: `Chemini` (Pull Request #4 merged into `main`)
+* **Typical Focus Area**: Functional Implementation & UI Development
+* **Frontend Contributions**:
   * Built `AdminScheduleList.jsx` with responsive table/card views and area filters.
   * Implemented `EditScheduleModal.jsx` and `DeleteScheduleModal.jsx` confirmation dialogs.
-  * Developed backend controllers `updateSchedule` (with strict validation) and `deleteSchedule` in `member2_scheduleUpdateDelete`.
+  * Implemented `scheduleUpdateValidation.js` and `adminScheduleFilter.js`.
+* **Backend Contributions**:
+  * Developed backend controllers `updateSchedule` (with strict validation) and `deleteSchedule` in `backend/src/modules/member2_scheduleUpdateDelete/`.
+  * Defined routes in `scheduleUpdateDelete.routes.js`.
 
-### 👤 Member 3: Oshini (Member 3)
-* **Role**: Report – Create + Read
-* **Git Branch**: `Oshini` (PR #2 Merged into `main`)
-* **Key Contributions**:
+### 👤 Member 3: Oshini (IT24103874)
+* **Assigned Role**: Report – Create + Read
+* **Git Branch**: `Oshini` (Pull Request #2 merged into `main`)
+* **Typical Focus Area**: Functional Implementation & UI Development
+* **Frontend Contributions**:
   * Built resident `ReportCreateForm.jsx` with hierarchical location selector and protected contact number input.
   * Developed `ReportCard.jsx` and `ResidentReportList.jsx` featuring quick status pills (`All`, `Pending`, `Resolved`).
-  * Developed backend controllers `getReports` (with resident phone privacy filter) and `createReport` auto-setting status to `"Pending"` in `member3_reportCreateRead`.
+  * Implemented `reportCreateValidation.js` and `reportAreaFilter.js`.
+* **Backend Contributions**:
+  * Developed backend controllers `getReports` (with resident phone privacy filter) and `createReport` auto-setting status to `"Pending"` in `backend/src/modules/member3_reportCreateRead/`.
+  * Defined routes in `reportCreateRead.routes.js`.
 
-### 👤 Member 4: Diniithi (Member 4)
-* **Role**: Report – Update + Delete & Admin Comments
-* **Git Branch**: `Diniithi` (PR #3 Merged into `main`)
-* **Key Contributions**:
+### 👤 Member 4: Dinithi Yasasvi (IT24104023/Member 4)
+* **Assigned Role**: Report – Update + Delete & Admin Comments
+* **Git Branch**: `Diniithi` (Pull Request #3 merged into `main`)
+* **Typical Focus Area**: Functional Implementation & UI Development
+* **Frontend Contributions**:
   * Built `AdminReportList.jsx` displaying the dedicated **Phone** column and **Admin Comment** response column.
   * Implemented `EditReportModal.jsx` allowing admins to toggle status (`Pending` ↔ `Resolved`) and log official response comments.
-  * Developed backend controllers `updateReport`, `updateReportStatus` (PATCH), and `deleteReport` in `member4_reportUpdateDelete`.
+  * Implemented `ReportStatusBadge.jsx`, `reportStatusFilter.js`, and `reportUpdateValidation.js`.
+* **Backend Contributions**:
+  * Developed backend controllers `updateReport`, `updateReportStatus` (PATCH), and `deleteReport` in `backend/src/modules/member4_reportUpdateDelete/`.
+  * Defined routes in `reportUpdateDelete.routes.js`.
 
 ---
+
 
 ## 💻 Local Installation & Execution
 
