@@ -55,6 +55,12 @@ In accordance with Section 2.3 of the SE3090 assessment guidelines:
 | Tool | Usage in Project | Human Review & Modification |
 | :--- | :--- | :--- |
 | **Google DeepMind Antigravity / Gemini** | Architectural scaffolding, UI component design, Express REST API modularization, and Git strategy | The team reviewed every component, modified validation logic, ensured Sri Lankan location accuracy, tested CRUD endpoints, and refined responsive CSS. |
+| **ChatGPT** | Brainstorming, code generation, project updating and etc. | The team reviewed every component, modified logic as required to ensure the project is successful. |
+
+links:
+https://chatgpt.com/share/6a9a6bf0-8840-83ee-8650-1f76dc3881cc
+https://chatgpt.com/share/6a9a6c7e-153c-83e8-96bb-22c1327537d6
+https://chatgpt.com/share/6a9a6c95-3c2c-83e9-bd4a-5e2a283a3896
 
 ---
 
